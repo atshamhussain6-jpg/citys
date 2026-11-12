@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>HTML Layout - Flexbox</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* header */
+ header { 
+  background-color: #666;
+  padding: 20px;
+  height:252px;
+  text-align: center;
+  color: white; 
+} 
+
+
+body {
+    padding: 0px;
+    margin: 0px;
+ }
+
+header h1 {
+  font-size: 2.5rem;
+}
+
+/* Container for flexboxes */
+section {
+  display: flex;
+}
+
+/* navigation menu */
+nav {
+  flex: 1;
+  background-color: #ccc;
+  padding: 15px;
+}
+
+/* Style list inside nav menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style the content */
+article {
+  flex: 4;
+  background-color: #f1f1f1;
+  padding: 15px;
+  color: black;
+}
+
+/* 1rem=16px */
+article h2 {
+  font-size: 32px;
+ 
+}
+
+/* Style the footer */
+footer {
+  background-color: #888;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+a {
+  text-decoration: none;
+}
+
+/* Responsive layout - makes the menu and the content sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<body>
+
+<header style="background-image:url('paris_full_image_1080x213_hd.png');background-size:cover;"><h1>Paris</h1></header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="london.html">London</a></li>
+      <li><a href="paris.html">Paris</a></li>
+      <li><a href="tokyo.html">Tokyo</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h2>PARIS</h2>
+    <p>Paris[b] is the capital and largest city of France, with an estimated city population of 2.04 million in an area of 105.4 km2 (40.7 sq mi), 
+    <p>as of January 2026,[4] and a metropolitan population of 13.3 million (2023). Located on the Seine in the centre of the Île-de-France region, it is the largest metropolitan area and fourth-most populous city in the European Union (EU). Paris is nicknamed the "City of Light" mainly due to its leading role in the Age of Enlightenment.Administratively, Paris is divided into twenty arrondissements (districts), each with their own cultural identity. Haussmann's renovation of Paris, which created new boulevards, parks, and public works, gave birth to a modern city known as the "capital of the 19th century". Paris is a major railway, motorway, and air-transport hub; in 2024 Charles de Gaulle Airport was the EU's busiest airport. Paris has one of the most sustainable transportation systems in the world and is one of only two cities that have received the Sustainable Transport Award twice. Its Art Nouveau-decorated Métro has become a symbol of the city. Paris is known for its museums and architectural landmarks: the Louvre is the largest and most-visited museum in the world;<a href="https://en.wikipedia.org/wiki/Paris">Read more</a></p>
+  </article>
+</section>
+
+<footer><p>© 2026 W3Schools</p></footer>
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>HTML Layout - Flexbox</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* header */
+ header { 
+  background-color: #666;
+  padding: 20px;
+  height:252px;
+  text-align: center;
+  color: white; 
+} 
+body {
+    padding: 0px;
+    margin: 0px;
+ }
+header h1 {
+  font-size: 2.5rem;
+}
+
+/* Container for flexboxes */
+section {
+  display: flex;
+}
+
+/* navigation menu */
+nav {
+  flex: 1;
+  background-color: #ccc;
+  padding: 15px;
+}
+
+/* Style list inside nav menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style the content */
+article {
+  flex: 4;
+  background-color: #f1f1f1;
+  padding: 15px;
+  color: black;
+}
+
+/* 1rem=16px */
+article h2 {
+  font-size: 32px;
+ 
+}
+
+/* Style the footer */
+footer {
+  background-color: #888;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+a {
+  text-decoration: none;
+}
+/* Responsive layout - makes the menu and the content sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<body>
+
+<header style="background-image:url('tokyo_fuji_full_hd_1080x213.png');background-size:cover;"><h1>Tokyo</h1></header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="london.html">London</a></li>
+      <li><a href="paris.html">Paris</a></li>
+      <li><a href="tokyo.html">Tokyo</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h2>TOKYO</h2>
+    <p>Tokyo,[a] officially the Tokyo Metropolis,[b] is the capital and most populous city of Japan. The population of the city proper was over 14 million as of 2023. 
+    <p>he Greater Tokyo Area, which includes Tokyo and parts of six neighboring prefectures, is the third-most populous metropolitan area in the world, with 33 million residents as of 2025.ying at the head of Tokyo Bay, Tokyo is part of the Kantō region, on the central coast of Honshu, Japan's largest island. It is Japan's economic center and the seat of the Japanese government and the Emperor of Japan. The Tokyo Metropolitan Government administers Tokyo's central 23 special wards, which formerly made up Tokyo City; various commuter towns and suburbs in its western area; and two outlying island chains, the Tokyo Islands. Although most of the world recognizes Tokyo as a city, since 1943 its governing structure has been more akin to that of a prefecture,with an accompanying Governor and Assembly taking precedence over the smaller municipal governments that make up the metropolis. <a href="https://en.wikipedia.org/wiki/Tokyo">Read more</a></p>
+  </article>
+</section>
+
+<footer><p>© 2026 W3Schools</p></footer>
+
+</body>
+</html>
